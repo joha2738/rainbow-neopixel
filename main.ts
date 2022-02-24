@@ -17,6 +17,7 @@ let Valg = 0
 Valg = 0
 let colorbit_51bit = colorbit.initColorBit(DigitalPin.P0, BitColorMode.RGB)
 let range = colorbit_51bit.range(0, 8)
+colorbit_51bit.setBrightness(255)
 colorbit_51bit.clear()
 colorbit_51bit.showRainbow(1, 360)
 basic.forever(function () {
